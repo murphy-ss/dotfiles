@@ -1,0 +1,2 @@
+export PATH="/home/vagrant/.anyenv/bin:$PATH"
+eval "$(anyenv init -)"
