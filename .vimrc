@@ -1,5 +1,5 @@
 set encoding=utf-8
-scripttenconding utf-8
+scriptencoding utf-8
 "set encoding=utf-8はファイル読み込み時の文字コードの設定
 "scriptencoding utf-8はvim内でマルチバイト文字を使う場合の設定
 
@@ -17,10 +17,6 @@ set number " 行番号を表示
 set cursorline " カーソルラインをハイライト
 
 "タブや空白文字を表示させる
-"tab:タブ文字 trail:行末のスペースを表示 nbsp:ノーブレイクスペース eol:改行を表示
-set list
-set listchars=tab:»-,trail:-,nbsp:%,eol:↲
-
 set expandtab " タブ入力を複数の空白入力に置き換える
 set tabstop=4 " 画面上でタブ文字が占める幅
 set softtabstop=4 " 連続した空白に対してタブキーやバックスペースキーでカーソルが動く幅
