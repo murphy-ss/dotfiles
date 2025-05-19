@@ -1,3 +1,25 @@
+" --- vim-plug settings ---
+call plug#begin('~/.vim/plugged')
+
+Plug 'tpope/vim-fugitive'        " Git操作をVimから行う
+Plug 'tpope/vim-surround'        " 括弧や引用符の操作を簡単にする
+Plug 'preservim/nerdtree'       " ファイルエクスプローラー
+Plug 'vim-airline/vim-airline'    " おしゃれで高機能なステータスライン
+Plug 'vim-airline/vim-airline-themes' " vim-airlineのテーマ集
+Plug 'ryanoasis/vim-devicons'     " NERDTreeなどにアイコンを表示
+Plug 'sheerun/vim-polyglot'      " 多くの言語のシンタックスハイライト等を強化
+Plug 'jiangmiao/auto-pairs'      " 括弧などを自動で閉じる
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " 高速な曖昧検索ツールfzf
+Plug 'junegunn/fzf.vim'         " fzfをVimから使いやすくする連携プラグイン
+Plug 'Yggdroot/indentLine'      " インデントを可視化する
+Plug 'mhinz/vim-startify'       " Vim起動時のスタート画面を高機能にする
+Plug 'rakr/vim-one'             " One Darkカラースキーム (Atom風)
+Plug 'morhetz/gruvbox'          " 人気のカラースキーム Gruvbox
+Plug 'dracula/vim', { 'as': 'dracula' } " Draculaカラースキーム
+
+call plug#end()
+" --- vim-plug settings end ---
+
 set encoding=utf-8
 scriptencoding utf-8
 "set encoding=utf-8はファイル読み込み時の文字コードの設定
